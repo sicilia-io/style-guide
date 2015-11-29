@@ -1,0 +1,25 @@
+{{> header }}
+<div class="container-main--box">
+  <div class="container-main--sidebar">
+
+    {{#if cover_picture }}
+    <div class="container-main--sidebar--author">
+      <profile-card>
+        <img src="{{ src }}" alt="Mario Rossi" class="avatar avatar--xs">
+        <div class="user--description">Ciao sono Mario Rossi, professione scrittore.</div>
+        <ul class="user--contacts">
+          <li><a href="#">Il corsaro</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">FaceBook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">G+</a></li>
+        </ul>
+      </profile-card>
+    </div>
+
+  </div>
+  <div class="container-main--content">
+    {{ content }}
+  </div>
+</div>
+{{> footer }}

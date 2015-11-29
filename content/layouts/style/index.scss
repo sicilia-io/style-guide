@@ -1,15 +1,19 @@
-@import '/node_modules/monera-style/bootstrap/index.scss';
+$grid-gutter-width: 20px !default;
+
+$navbar-default-color: rgb(246, 142, 56) !default;
+$navbar-default-bg: rgb(246, 142, 56) !default;
+$navbar-default-link-color: rgb(119, 119, 119) !default;
+
+$default-border-radius: 2px !default;
+
+@import '/node_modules/monera-style/bootstrap/index.scss',
+        'partials/container.scss',
+        'partials/header.scss';
+
 
 /*
  * Globals
  */
-
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff;
-}
 
 /* Custom default button */
 .btn-default,
@@ -28,7 +32,6 @@ a:hover {
 
 html,
 body {
-  height: 100%;
   background: repeating-linear-gradient(
     45deg,
     yellow -100%,
@@ -46,24 +49,6 @@ body {
 body {
   color: #333;
   text-align: center;
-}
-
-/* Extra markup and styles for table-esque vertical and horizontal centering */
-.site-wrapper {
-  display: table;
-  width: 100%;
-  height: 100%; /* For at least Firefox */
-  min-height: 100%;
-  -webkit-box-shadow: inset 0 0 30px rgba(0,0,0,.5);
-          box-shadow: inset 0 0 30px rgba(0,0,0,.5);
-}
-.site-wrapper-inner {
-  display: table-cell;
-  vertical-align: top;
-}
-.cover-container {
-  margin-right: auto;
-  margin-left: auto;
 }
 
 /* Padding for spacing */

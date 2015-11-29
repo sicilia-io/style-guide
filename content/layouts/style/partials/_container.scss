@@ -1,0 +1,20 @@
+.container-main--box{
+  @extend .row;
+  margin: 0 $grid-gutter-width $grid-gutter-width $grid-gutter-width;
+}
+
+.container-main--sidebar{
+
+}
+
+.container-main--content{
+  @extend .col-md-12;
+  background: #fff;
+  padding: $grid-gutter-width;
+  box-shadow: 0px 0px 2px;
+  text-align: left;
+
+  >h2{
+    margin-top: 0;
+  }
+}
