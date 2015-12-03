@@ -8,8 +8,9 @@ $default-border-radius: 2px !default;
 
 @import '/node_modules/monera-style/bootstrap/index.scss',
         'partials/container.scss',
+        'partials/post.scss',
+        'partials/profile-card.scss',
         'partials/header.scss';
-
 
 /*
  * Globals
