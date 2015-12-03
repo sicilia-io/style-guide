@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Strumenti del mestiere">
+    <meta name="author" content="Monera">
+    <!-- @Todo Create favicon once we have a logo ^_^' -->
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+    <title>Sicilia-io Style Guide - Strumenti del mestiere</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <!--[if lt IE 9]>
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.ie.min.css" />
+    <![endif]-->
+    <link  href="http://style.sicilia.io/assets/css/index.css" media="screen" rel="stylesheet" type="text/css"/>
+  </head>
+
+  <body>
+
+
+  <div class="nav-header--block">
+    <div class="nav-header--logo">
+      <img src="http://style.sicilia.io/assets/images/logo.svg"  alt="Sicilia Style">
+    </div>
+    <ul class="nav-header--categories">
+      <li><a href="#" class="js-sometaction">Formattazione</a></li>
+      <li><a href="#" class="js-sometaction">Modelli</a></li>
+      <li><a href="#" class="js-sometaction">Componenti</a></li>
+      <li><a href="#" class="js-sometaction">Utilitá</a></li>
+      <li><a href="#" class="js-sometaction">Stile di scrivere</a></li>
+
+    </ul>
+  </div>
+
+
+  <div class="github-fork-ribbon-wrapper right">
+      <div class="github-fork-ribbon">
+          <a href="https://github.com/sicilia-io/style-guide">Fork me on GitHub</a>
+      </div>
+  </div>
+<div class="container-main--box">
+  <div class="container-main--content">
+    <h2 id="sicilia-style-guide-build-status-https-travis-ci-org-sicilia-io-style-guide-svg-branch-master-https-travis-ci-org-sicilia-io-style-guide-">Sicilia Style Guide <a href="https://travis-ci.org/sicilia-io/style-guide"><img src="https://travis-ci.org/sicilia-io/style-guide.svg?branch=master" alt="Build Status"></a></h2>
+<p>Lista di risorse utili per l&#39;impaginamento.
+Punto di riferimento per Articolisti e Designers Siciliani.</p>
+<h2 id="installation">Installation</h2>
+<pre><code>git clone git@github.com:Ideabile/monera.git &amp;&amp; cd monera
+</code></pre><h2 id="usage">Usage</h2>
+<pre><code>make build
+</code></pre><h2 id="contributing">Contributing</h2>
+<p>This isn&#39;t the main project and since this is a Kingdom.
+And the only purpose of this repository is documenting how to develop with our resources.</p>
+<p>However you&#39;re contributions are also welcome here.</p>
+<p>We suggest to take a look to the Organism list bellow that monera is officially compose by.
+Or you can suggest/submit new Organism.</p>
+<p>You can still apply your contributions to this repo by:</p>
+<ol>
+<li>Fork it!</li>
+<li>Create your feature branch: <code>git checkout -b my-new-feature</code></li>
+<li>Commit your changes: <code>git commit -am &#39;Add some feature&#39;</code></li>
+<li>Push to the branch: <code>git push origin my-new-feature</code></li>
+<li>Submit a pull request :D</li>
+</ol>
+<h2 id="development">Development</h2>
+<p>We require you to have <code>npm</code> and <code>node</code> installed to make able to install <a href="http://www.browsersync.io/"><code>browser-sync</code></a>,
+additionally we download and compile <a href="http://github.com/emcrisostomo/fswatch"><code>fsWatch</code></a> to run <code>make build</code> every-time that a file change.</p>
+<pre><code>make install-dev &amp;&amp; make dev-start
+</code></pre><p>Now you can do your changes in the content, and when you save them they would be compile, and your browser refresh automatically.</p>
+<p><em>Note: We also use ngnix machine to start the server, and our ip address is set to 192.168.99.100 for our local development, you maybe want to change it, if for your case is different in the Makefile, but please don&#39;t commit them.</em></p>
+<h2 id="create-your-first-website-with-travis-and-github-pages">Create your first website with Travis and Github Pages</h2>
+<p>This documentation is a live example in how you could change your</p>
+<ol>
+<li>Fork it!</li>
+<li>Create a <a href="https://help.github.com/articles/creating-an-access-token-for-command-line-use/">GitHub Authentication token</a></li>
+<li>Add your repository to travis.</li>
+<li>Add your <code>GH_TOKEN</code> to travis <code>travis encrypt GH_TOKEN=secretvalue</code></li>
+<li>Commit and push.</li>
+<li>Enjoy your website at <code>http://&lt;username&gt;.github.io/&lt;repo-name&gt;/</code></li>
+</ol>
+<p>Every change on master would recreate your gh-pages branch. Enjoy :-)</p>
+<h2 id="other-organisms">Other organisms</h2>
+<ul>
+<li><a href="https://github.com/Ideabile/monera-static-transformer">monera-transformer</a> - The first organism, a static trasformer for your ui&#39;s.</li>
+</ul>
+<h2 id="credits">Credits</h2>
+<ul>
+<li><a href="http://www.ideabile.com">Mauro Mandracchia ~ Author</a></li>
+</ul>
+
+  </div>
+</div>
+</body>
+</html>
