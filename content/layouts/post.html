@@ -1,25 +1,29 @@
 {{> header }}
 <div class="container-main--box">
-  <div class="container-main--sidebar">
 
-    {{#if cover_picture }}
-    <div class="container-main--sidebar--author">
-      <profile-card>
-        <img src="{{ src }}" alt="Mario Rossi" class="avatar avatar--xs">
-        <div class="user--description">Ciao sono Mario Rossi, professione scrittore.</div>
-        <ul class="user--contacts">
-          <li><a href="#">Il corsaro</a></li>
-          <li><a href="#">GitHub</a></li>
-          <li><a href="#">FaceBook</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">G+</a></li>
-        </ul>
-      </profile-card>
-    </div>
-
-  </div>
   <div class="container-main--content">
-    {{ content }}
+
+      <div class="container-main--cover" {{#if cover}}style="background-image: url({{cover}})"{{/if}}>
+          <profile-card>
+            <img src="https://s3.amazonaws.com/uifaces/faces/twitter/sillyleo/128.jpg" alt="Mario Rossi" class="avatar avatar--xs">
+            <ul class="user--detail">
+              <li class="user--detail--title">Mario Rossi</li>
+              <li class="user--detail--desc">Ciao sono Mario Rossi, professione scrittore.</li>
+              <li class="user--contacts">
+                <ul>
+                  <li><a href="#"><i class="fa fa-link"> </i></a></li>
+                  <li><a href="#"><i class="fa fa-globe"> </i></a></li>
+                  <li><a href="#"><i class="fa fa-github"> </i></a></li>
+                  <li><a href="#"><i class="fa fa-facebook"> </i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"> </i></a></li>
+                  <li><a href="#"><i class="fa fa-google-plus"> </i></a></li>
+                </ul>
+              </li>
+            </ul>
+          </profile-card>
+      </div>
+
+    {{{ contents }}}
   </div>
 </div>
 {{> footer }}

@@ -1,0 +1,66 @@
+profile-card{
+  display: block;
+  img{
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+  .user--contacts{
+    @extend .nav;
+    @extend .nav-pills;
+  }
+}
+
+.container-main--cover profile-card{
+  display: block;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  height: 50px;
+  width: 100%;
+  font-size: 12px;
+
+  img{
+    width: 50px;
+    top: -25px;
+    left: 30px;
+    position: absolute;
+  }
+
+  .user--detail{
+    list-style: none;
+    clear: left;
+    margin-top: 20px;
+  }
+  .user--detail li{
+    &:first-child{
+      padding-left: 0;
+      margin-left: -10px;
+    }
+    float: left;
+    display: inline-block;
+    color: #fff;
+    padding: 10px;
+
+
+    &.user--detail--label{
+      margin-right: 10px;
+      display: none;
+    }
+    &.user--detail--desc{
+      color: #ccc;
+      font-style: italic;
+    }
+  }
+  .user--detail li.user--contacts{
+    position: absolute;
+    top: 0;
+    right: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0 10px;
+    a{
+      color: #fff;
+      &:hover{ color: #333; }
+    }
+  }
+}

@@ -15,7 +15,7 @@ install-dev: .
 dev-start: dev-fswatch
 
 dev-fswatch: dev-browsersync
-	fswatch -Ie ".*\.css$$" ./content | (while read; do make build; done)
+	fswatch -Ie ".*\.css$$" ./content | while read; do make build; done
 
 dev-browsersync: dev-server
 	browser-sync start --proxy="192.168.99.100" --files="www/**" &
